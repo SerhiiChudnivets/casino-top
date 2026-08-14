@@ -10,7 +10,42 @@
   "use_www_version": false,
   "breadcrumbs": false,
   "content": "<h2>Welcome to Our Online Casino</h2>\n<p>Experience the thrill of gaming from the comfort of your home! Our online casino offers a wide range of games, exciting promotions, and a user-friendly interface. Dive into the world of entertainment and potential winnings today!</p>\n\n<h3>Why Choose Our Online Casino?</h3>\n<ul>\n    <li><strong>Diverse Game Selection:</strong> Choose from hundreds of games including slots, table games, and live dealer options.</li>\n    <li><strong>Safe and Secure:</strong> Your personal and financial information is protected with top-notch encryption technology.</li>\n    <li><strong>Generous Bonuses:</strong> Enjoy welcome bonuses, free spins, and ongoing promotions to enhance your gaming experience.</li>\n    <li><strong>24/7 Customer Support:</strong> Our dedicated support team is always available to assist you with any inquiries.</li>\n</ul>\n\n<h3>Popular Games You Can Play</h3>\n<table>\n    <thead>\n        <tr>\n            <th>Game Type</th>\n            <th>Popular Titles</th>\n            <th>Features</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>Slots</td>\n            <td>Starburst, Mega Moolah, Gonzo's Quest</td>\n            <td>High RTP, Progressive jackpots, Unique themes</td>\n        </tr>\n        <tr>\n            <td>Table Games</td>\n            <td>Blackjack, Roulette, Baccarat</td>\n            <td>Multiple betting options, Realistic graphics, Live dealer versions</td>\n        </tr>\n        <tr>\n            <td>Live Casino</td>\n            <td>Live Roulette, Live Blackjack, Live Poker</td>\n            <td>Real-time interaction, Professional dealers, Immersive experience</td>\n        </tr>\n    </tbody>\n</table>\n\n<h3>Getting Started</h3>\n<p>Ready to join the excitement? Follow these simple steps to get started:</p>\n<ol>\n    <li><strong>Sign Up:</strong> Create your account by providing basic information.</li>\n    <li><strong>Make a Deposit:</strong> Choose from various secure payment methods to fund your account.</li>\n    <li><strong>Claim Your Bonus:</strong> Take advantage of our welcome bonus to boost your gameplay.</li>\n    <li><strong>Start Playing:</strong> Explore our game library and start enjoying your favorite games!</li>\n</ol>\n\n<h3>Responsible Gaming</h3>\n<p>We prioritize responsible gaming and encourage players to gamble responsibly. Set limits, take breaks, and know when to stop. If you feel that you may have a gambling problem, please seek help.</p>\n\n<h3>Join Us Today!</h3>\n<p>Don’t miss out on the action! <a href=\"signup.html\">Sign up now</a> to claim your welcome bonus and explore our extensive range of games. Your adventure awaits!</p>",
-  "pages": [],
+  "pages": [
+    {
+      "id": 39,
+      "title": "page",
+      "slug": "page",
+      "content": "<h2>Welcome to Our Online Casino</h2><p>Experience the thrill of gaming from the comfort of your home! Our online casino offers a wide range of games, exciting promotions, and a user-friendly interface. Dive into the world of entertainment and potential winnings today!</p><h3>Why Choose Our Online Casino?</h3><ul><li><p><strong>Diverse Game Selection:</strong> Choose from hundreds of games including slots, table games, and live dealer options.</p></li><li><p><strong>Safe and Secure:</strong> Your personal and financial information is protected with top-notch encryption technology.</p></li><li><p><strong>Generous Bonuses:</strong> Enjoy welcome bonuses, free spins, and ongoing promotions to enhance your gaming experience.</p></li><li><p><strong>24/7 Customer Support:</strong> Our dedicated support team is always available to assist you with any inquiries.</p></li></ul><h3>Popular Games You Can Play</h3><table style=\"min-width: 75px;\"><colgroup><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"><col style=\"min-width: 25px;\"></colgroup><tbody><tr><th colspan=\"1\" rowspan=\"1\"><p>Game Type</p></th><th colspan=\"1\" rowspan=\"1\"><p>Popular Titles</p></th><th colspan=\"1\" rowspan=\"1\"><p>Features</p></th></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>Slots</p></td><td colspan=\"1\" rowspan=\"1\"><p>Starburst, Mega Moolah, Gonzo's Quest</p></td><td colspan=\"1\" rowspan=\"1\"><p>High RTP, Progressive jackpots, Unique themes</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>Table Games</p></td><td colspan=\"1\" rowspan=\"1\"><p>Blackjack, Roulette, Baccarat</p></td><td colspan=\"1\" rowspan=\"1\"><p>Multiple betting options, Realistic graphics, Live dealer versions</p></td></tr><tr><td colspan=\"1\" rowspan=\"1\"><p>Live Casino</p></td><td colspan=\"1\" rowspan=\"1\"><p>Live Roulette, Live Blackjack, Live Poker</p></td><td colspan=\"1\" rowspan=\"1\"><p>Real-time interaction, Professional dealers, Immersive experience</p></td></tr></tbody></table><h3>Getting Started</h3><p>Ready to join the excitement? Follow these simple steps to get started:</p><ol><li><p><strong>Sign Up:</strong> Create your account by providing basic information.</p></li><li><p><strong>Make a Deposit:</strong> Choose from various secure payment methods to fund your account.</p></li><li><p><strong>Claim Your Bonus:</strong> Take advantage of our welcome bonus to boost your gameplay.</p></li><li><p><strong>Start Playing:</strong> Explore our game library and start enjoying your favorite games!</p></li></ol><h3>Responsible Gaming</h3><p>We prioritize responsible gaming and encourage players to gamble responsibly. Set limits, take breaks, and know when to stop. If you feel that you may have a gambling problem, please seek help.</p><h3>Join Us Today!</h3><p>Don’t miss out on the action! <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" class=\"text-blue-400 underline cursor-pointer\" href=\"signup.html\">Sign up now</a> to claim your welcome bonus and explore our extensive range of games. Your adventure awaits!</p>",
+      "seoTitle": "Title",
+      "seoDescription": "Description",
+      "htmlHead": "",
+      "gptPrompt": "",
+      "heroTitle": "Test 111",
+      "heroSubtitle": "Baner baner",
+      "heroImage": "/uploads/0a08ebbf4ce34afdc60f8c08a5572d2a.jpg",
+      "template": "homepage",
+      "isHomepage": false,
+      "order": 0,
+      "lang": "pl-pl",
+      "faqTitle": "Faqqq",
+      "sections": null,
+      "faq": [
+        {
+          "answer": "відп 1",
+          "question": "Пит 1"
+        }
+      ],
+      "websiteId": 129,
+      "createdAt": {},
+      "updatedAt": {},
+      "hero_title": "Heading 111",
+      "hero_subtitle": "Information Banner Information Banner Information Banner",
+      "hero_image": "/uploads/3e277bff00f0f4861ac90a62c4a14771.jpg",
+      "seo_title": "Title",
+      "seo_description": "Description",
+      "faq_title": "Faqqq"
+    }
+  ],
   "faq_schema": {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -155,8 +190,8 @@
       "question": "Питання 2?"
     }
   ],
-  "_generated_at": "2026-08-14T09:55:48.877Z",
+  "_generated_at": "2026-08-14T10:01:20.117Z",
   "_version": "1.0.0",
-  "_last_deploy": "2026-08-14T09:55:51.545Z",
-  "_deploy_trigger": "dsy3ho"
+  "_last_deploy": "2026-08-14T10:01:20.742Z",
+  "_deploy_trigger": "7i4m78"
 }
