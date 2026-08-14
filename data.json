@@ -1,0 +1,162 @@
+{
+  "name": "casino.top",
+  "site_name": "Title",
+  "html_head": "",
+  "url": "casino.top",
+  "template": "tupchiy",
+  "language_code": "pl",
+  "allow_indexing": false,
+  "redirect_404s_to_homepage": false,
+  "use_www_version": false,
+  "breadcrumbs": false,
+  "content": "<h2>Welcome to Our Online Casino</h2>\n<p>Experience the thrill of gaming from the comfort of your home! Our online casino offers a wide range of games, exciting promotions, and a user-friendly interface. Dive into the world of entertainment and potential winnings today!</p>\n\n<h3>Why Choose Our Online Casino?</h3>\n<ul>\n    <li><strong>Diverse Game Selection:</strong> Choose from hundreds of games including slots, table games, and live dealer options.</li>\n    <li><strong>Safe and Secure:</strong> Your personal and financial information is protected with top-notch encryption technology.</li>\n    <li><strong>Generous Bonuses:</strong> Enjoy welcome bonuses, free spins, and ongoing promotions to enhance your gaming experience.</li>\n    <li><strong>24/7 Customer Support:</strong> Our dedicated support team is always available to assist you with any inquiries.</li>\n</ul>\n\n<h3>Popular Games You Can Play</h3>\n<table>\n    <thead>\n        <tr>\n            <th>Game Type</th>\n            <th>Popular Titles</th>\n            <th>Features</th>\n        </tr>\n    </thead>\n    <tbody>\n        <tr>\n            <td>Slots</td>\n            <td>Starburst, Mega Moolah, Gonzo's Quest</td>\n            <td>High RTP, Progressive jackpots, Unique themes</td>\n        </tr>\n        <tr>\n            <td>Table Games</td>\n            <td>Blackjack, Roulette, Baccarat</td>\n            <td>Multiple betting options, Realistic graphics, Live dealer versions</td>\n        </tr>\n        <tr>\n            <td>Live Casino</td>\n            <td>Live Roulette, Live Blackjack, Live Poker</td>\n            <td>Real-time interaction, Professional dealers, Immersive experience</td>\n        </tr>\n    </tbody>\n</table>\n\n<h3>Getting Started</h3>\n<p>Ready to join the excitement? Follow these simple steps to get started:</p>\n<ol>\n    <li><strong>Sign Up:</strong> Create your account by providing basic information.</li>\n    <li><strong>Make a Deposit:</strong> Choose from various secure payment methods to fund your account.</li>\n    <li><strong>Claim Your Bonus:</strong> Take advantage of our welcome bonus to boost your gameplay.</li>\n    <li><strong>Start Playing:</strong> Explore our game library and start enjoying your favorite games!</li>\n</ol>\n\n<h3>Responsible Gaming</h3>\n<p>We prioritize responsible gaming and encourage players to gamble responsibly. Set limits, take breaks, and know when to stop. If you feel that you may have a gambling problem, please seek help.</p>\n\n<h3>Join Us Today!</h3>\n<p>Don’t miss out on the action! <a href=\"signup.html\">Sign up now</a> to claim your welcome bonus and explore our extensive range of games. Your adventure awaits!</p>",
+  "pages": [],
+  "faq_schema": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Питання 1?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Відповідь 1"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Питання 2?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Відповідь 2"
+        }
+      }
+    ]
+  },
+  "seo_description": "Description",
+  "redirect_site": null,
+  "hero_title": "Heading 111",
+  "hero_subtitle": "Information Banner Information Banner Information Banner",
+  "hero_badge": "Badge111",
+  "cta_text": "Play Now",
+  "tagline": "Subtitle Banner",
+  "features_list": null,
+  "footer_text": "Footer Text Footer Text Footer Text",
+  "popup_text": "Popup Text Popup Text",
+  "faq_title": "Faqqq",
+  "login_text": "Login",
+  "register_text": "Register2",
+  "slots_title": "Slots",
+  "bonus_title": "Bonuses",
+  "get_bonus_btn_text": "Get Bonus",
+  "redirect_link": "/play",
+  "home_name": null,
+  "subdomains": null,
+  "accent_color": "#d4af37",
+  "main_background": "#ffffff",
+  "secondary_background": "#36922f",
+  "button_background": "#660000",
+  "button_text_color": "#ffffff",
+  "text_color": "#000000",
+  "color_highlight_text": "#6f6767",
+  "color_main_btn_text": "#ffffff",
+  "cta_background": "#008071",
+  "logo": {
+    "url": "/uploads/2d264c9b9bdb03938bb43dcd0e971fa9.jpg"
+  },
+  "popup_logo": {
+    "url": "/uploads/7b1333ad1573a0f8ad14c647e5ae72e6.jpg"
+  },
+  "main_background_img": {
+    "url": "/uploads/3e277bff00f0f4861ac90a62c4a14771.jpg"
+  },
+  "header_menu": [
+    {
+      "link": "/play",
+      "label": "меню хед",
+      "submenu": [],
+      "openInNewTab": false
+    },
+    {
+      "link": "/play",
+      "label": "меню хед 2",
+      "submenu": [],
+      "openInNewTab": false
+    }
+  ],
+  "footer_menu": [
+    {
+      "link": "/play",
+      "label": "footer 1",
+      "submenu": [],
+      "openInNewTab": false
+    },
+    {
+      "link": "/play",
+      "label": "footer 2",
+      "submenu": [],
+      "openInNewTab": false
+    }
+  ],
+  "footer_images": [
+    {
+      "link": "/play",
+      "image": "/uploads/7b1333ad1573a0f8ad14c647e5ae72e6.jpg"
+    }
+  ],
+  "Slots": [
+    {
+      "link": "/play",
+      "logo": "/uploads/95d151ba203814d1439e9e8d01e310c4.webp",
+      "name": "Slots 1",
+      "Name": "Slots 1"
+    },
+    {
+      "link": "",
+      "logo": "/uploads/4d5c7264fe66737fd58c509e6122f242.jpg",
+      "name": "Slots 2",
+      "Name": "Slots 2"
+    },
+    {
+      "link": "",
+      "logo": "/uploads/95d151ba203814d1439e9e8d01e310c4.webp",
+      "name": "Slots 3",
+      "Name": "Slots 3"
+    },
+    {
+      "link": "",
+      "logo": "/uploads/4d5c7264fe66737fd58c509e6122f242.jpg",
+      "name": "Slots 4",
+      "Name": "Slots 4"
+    }
+  ],
+  "Bonuses": [
+    {
+      "link": "/play",
+      "logo": "/uploads/7b1333ad1573a0f8ad14c647e5ae72e6.jpg",
+      "name": "Bonus 50fs",
+      "Name": "Bonus 50fs"
+    },
+    {
+      "link": "/play",
+      "logo": "/uploads/2d264c9b9bdb03938bb43dcd0e971fa9.jpg",
+      "name": "Bonus 100%",
+      "Name": "Bonus 100%"
+    }
+  ],
+  "Reviews": null,
+  "FAQ": [
+    {
+      "answer": "Відповідь 1",
+      "question": "Питання 1?"
+    },
+    {
+      "answer": "Відповідь 2",
+      "question": "Питання 2?"
+    }
+  ],
+  "_generated_at": "2026-08-14T09:55:48.877Z",
+  "_version": "1.0.0",
+  "_last_deploy": "2026-08-14T09:55:51.545Z",
+  "_deploy_trigger": "dsy3ho"
+}
