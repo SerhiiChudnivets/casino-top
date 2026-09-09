@@ -22,13 +22,58 @@
       "gptPrompt": "",
       "heroTitle": "Test 111",
       "heroSubtitle": "Baner baner",
+      "heroBadge": "pages badge",
+      "ctaText": "page CTA",
+      "tagline": "Page sub",
       "heroImage": "/uploads/0a08ebbf4ce34afdc60f8c08a5572d2a.jpg",
       "template": "homepage",
       "isHomepage": false,
       "order": 0,
       "lang": "pl-pl",
       "faqTitle": "Faqqq",
+      "popupText": "Popup Text Popup Text",
+      "popupLogo": "/uploads/7b1333ad1573a0f8ad14c647e5ae72e6.jpg",
       "sections": null,
+      "slots": [
+        {
+          "link": "/play",
+          "logo": "/uploads/95d151ba203814d1439e9e8d01e310c4.webp",
+          "name": "Slots 1",
+          "Name": "Slots 1"
+        },
+        {
+          "link": "",
+          "logo": "/uploads/4d5c7264fe66737fd58c509e6122f242.jpg",
+          "name": "Slots 2",
+          "Name": "Slots 2"
+        },
+        {
+          "link": "",
+          "logo": "/uploads/95d151ba203814d1439e9e8d01e310c4.webp",
+          "name": "Slots 3",
+          "Name": "Slots 3"
+        },
+        {
+          "link": "",
+          "logo": "/uploads/4d5c7264fe66737fd58c509e6122f242.jpg",
+          "name": "Slots 4",
+          "Name": "Slots 4"
+        }
+      ],
+      "bonuses": [
+        {
+          "link": "/play",
+          "logo": "/uploads/7b1333ad1573a0f8ad14c647e5ae72e6.jpg",
+          "name": "Bonus 50fs",
+          "Name": "Bonus 50fs"
+        },
+        {
+          "link": "/play",
+          "logo": "/uploads/2d264c9b9bdb03938bb43dcd0e971fa9.jpg",
+          "name": "Bonus 100%",
+          "Name": "Bonus 100%"
+        }
+      ],
       "faq": [
         {
           "answer": "відп 1",
@@ -38,12 +83,16 @@
       "websiteId": 129,
       "createdAt": {},
       "updatedAt": {},
+      "popup_text": "Popup Text Popup Text",
+      "popup_logo": "/uploads/7b1333ad1573a0f8ad14c647e5ae72e6.jpg",
       "hero_title": "Heading 111",
       "hero_subtitle": "Information Banner Information Banner Information Banner",
       "hero_image": "/uploads/3e277bff00f0f4861ac90a62c4a14771.jpg",
       "seo_title": "Title",
       "seo_description": "Description",
-      "faq_title": "Faqqq"
+      "faq_title": "Faqqq",
+      "hero_badge": "Badge111",
+      "cta_text": "Play Now"
     }
   ],
   "faq_schema": {
@@ -190,8 +239,8 @@
       "question": "Питання 2?"
     }
   ],
-  "_generated_at": "2026-08-17T10:37:28.222Z",
+  "_generated_at": "2026-09-09T09:15:33.613Z",
   "_version": "1.0.0",
-  "_last_deploy": "2026-08-17T10:37:28.814Z",
-  "_deploy_trigger": "o1oas"
+  "_last_deploy": "2026-09-09T09:15:34.439Z",
+  "_deploy_trigger": "x0qxbe"
 }
