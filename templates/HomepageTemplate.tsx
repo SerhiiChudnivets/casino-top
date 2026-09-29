@@ -5,20 +5,26 @@ interface MediaFile {
   id?: number
   name?: string
   url?: string
+  alt?: string
+  alternativeText?: string
   formats?: any
 }
 
 interface Slot {
   id?: number
   Name?: string
+  name?: string
   logo?: MediaFile | MediaFile[] | string
+  logo_alt?: string
   link?: string
 }
 
 interface Bonus {
   id?: number
   Name?: string
+  name?: string
   logo?: MediaFile | MediaFile[] | string
+  logo_alt?: string
   link?: string
 }
 
@@ -44,6 +50,8 @@ interface MenuItem {
 interface FooterImage {
   id?: number
   link?: string
+  alt?: string
+  image_alt?: string
   image?: string | MediaFile | MediaFile[] | null
 }
 
@@ -65,10 +73,13 @@ interface PageData {
   hero_subtitle?: string
   heroSubtitle?: string
   hero_badge?: string
+  heroBadge?: string
   heroImage?: string | MediaFile | MediaFile[] | null
   hero_image?: string | MediaFile | MediaFile[] | null
   cta_text?: string
+  ctaText?: string
   cta_link?: string
+  tagline?: string
   faq_title?: string
   faqTitle?: string
   faq?: { id?: number; question: string; answer: string }[]
@@ -99,7 +110,9 @@ interface SiteData {
   hero_title?: string
   hero_subtitle?: string
   hero_badge?: string
+  heroBadge?: string
   cta_text?: string
+  ctaText?: string
   tagline?: string
   features_list?: string
   popup_text?: string
@@ -710,8 +723,9 @@ export default function HomepageTemplate({ page, site }: { page: PageData; site:
   const siteName = site.site_name || site.name || 'LuckySpin'
   const heroTitle = page.heroTitle || page.hero_title || site.heroTitle || site.hero_title || 'Get 200% Bonus'
   const heroSubtitle = page.heroSubtitle || page.hero_subtitle || site.heroSubtitle || site.hero_subtitle || 'Up to \u20AC1,000 + 100 Free Spins'
-  const heroBadge = page.hero_badge || site.hero_badge || 'Welcome Bonus'
-  const ctaText = page.cta_text || site.cta_text || 'Play Now'
+  const heroBadge = page.heroBadge || page.hero_badge || site.heroBadge || site.hero_badge || 'Welcome Bonus'
+  const ctaText = page.ctaText || page.cta_text || site.ctaText || site.cta_text || 'Play Now'
+  const tagline = page.tagline || site.tagline || 'Start your winning journey today with the best welcome offer in online gaming!'
   const popupText = page.popup_text || site.popup_text || 'Welcome Bonus: 100% up to $500 + 200 Free Spins!'
 
   const normalizeUrl = (url?: string) => {
@@ -838,6 +852,13 @@ export default function HomepageTemplate({ page, site }: { page: PageData; site:
     return ''
   }
 
+  const getMediaAlt = (media?: MediaFile | MediaFile[] | string | null, fallback = '') => {
+    if (!media) return fallback
+    if (typeof media === 'string') return fallback
+    if (Array.isArray(media)) return getMediaAlt(media[0], fallback)
+    return media.alt || media.alternativeText || media.name || fallback
+  }
+
   const footerImagesSource = Array.isArray(page.footer_images) && page.footer_images.length > 0
     ? page.footer_images
     : Array.isArray(page.footerImages) && page.footerImages.length > 0
@@ -846,7 +867,11 @@ export default function HomepageTemplate({ page, site }: { page: PageData; site:
         ? site.footer_images
         : site.footerImages || []
   const footerImages = footerImagesSource
-    .map((item) => ({ ...item, imageUrl: getMediaUrl(item.image || undefined) }))
+    .map((item, index) => ({
+      ...item,
+      imageUrl: getMediaUrl(item.image || undefined),
+      imageAlt: item.alt || item.image_alt || getMediaAlt(item.image || undefined, `Footer certification ${index + 1}`),
+    }))
     .filter((item) => item.imageUrl)
 
   const backgroundImage = getMediaUrl(page.heroImage || page.hero_image || site.heroImage || site.hero_image || site.main_background_img)
@@ -896,7 +921,7 @@ export default function HomepageTemplate({ page, site }: { page: PageData; site:
             <div className="header-content">
               <div className="logo">
                 <a href={normalizeUrl(urlSite)}>
-                  <img src={getMediaUrl(site.logo)} alt={siteName} className="logo-image"/>
+                  <img src={getMediaUrl(site.logo)} alt={getMediaAlt(site.logo, siteName)} className="logo-image"/>
                 </a>
               </div>
               <nav className={`nav-bar ${isMobileMenuOpen ? 'open' : ''}`}>
@@ -1004,7 +1029,7 @@ export default function HomepageTemplate({ page, site }: { page: PageData; site:
                 </h1>
                 <p className="hero-subtitle">{heroSubtitle}</p>
                 <p className="hero-description">
-                  {page.tagline || site.tagline || 'Start your winning journey today with the best welcome offer in online gaming!'}
+                  {tagline}
                 </p>
               </div>
               <button
@@ -1033,7 +1058,7 @@ export default function HomepageTemplate({ page, site }: { page: PageData; site:
                     return (
                       <div key={slot.id || index} className="slot-card">
                         {logoUrl ? (
-                          <img src={logoUrl} alt={slot.Name || `Slot ${index + 1}`} className="slot-image" />
+                          <img src={logoUrl} alt={slot.logo_alt || getMediaAlt(slot.logo, slot.Name || slot.name || `Slot ${index + 1}`)} className="slot-image" />
                         ) : (
                           <div className="slot-image" style={{ background: 'linear-gradient(135deg, #1e293b 0%, #0f172a 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '3rem' }}>
                             {'\uD83C\uDFB0'}
@@ -1076,7 +1101,7 @@ export default function HomepageTemplate({ page, site }: { page: PageData; site:
                       <div key={bonus.id || index} className="bonus-card">
                         <div className="bonus-header">
                           {bonusLogo ? (
-                            <img src={bonusLogo} alt={bonus.Name || `Bonus ${index + 1}`} />
+                            <img src={bonusLogo} alt={bonus.logo_alt || getMediaAlt(bonus.logo, bonus.Name || bonus.name || `Bonus ${index + 1}`)} />
                           ) : (
                             <svg className="bonus-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7" />
@@ -1149,14 +1174,14 @@ export default function HomepageTemplate({ page, site }: { page: PageData; site:
               <div className="footer-top">
                 <div className="logo">
                   <a href={normalizeUrl(urlSite)}>
-                    <img src={getMediaUrl(site.logo)} alt={siteName} className="logo-image"/>
+                    <img src={getMediaUrl(site.logo)} alt={getMediaAlt(site.logo, siteName)} className="logo-image"/>
                   </a>
                 </div>
                 <div className="footer-certifications">
                   {footerImages.length > 0 ? (
                     footerImages.map((item, index) => (
                       <a key={item.id || index} href={item.link || '#'} className="footer-certification-link" target="_blank" rel="nofollow">
-                        <img src={item.imageUrl} alt={`Footer certification ${index + 1}`} className="footer-certification-image" />
+                        <img src={item.imageUrl} alt={item.imageAlt} className="footer-certification-image" />
                       </a>
                     ))
                   ) : (
@@ -1212,7 +1237,7 @@ export default function HomepageTemplate({ page, site }: { page: PageData; site:
             <div className="popup-content">
               {getMediaUrl(page.popup_logo || site.popup_logo) && (
                 <div className="logo">
-                  <img src={getMediaUrl(page.popup_logo || site.popup_logo)} alt="Logo" className="logo-image" />
+                  <img src={getMediaUrl(page.popup_logo || site.popup_logo)} alt={getMediaAlt(page.popup_logo, getMediaAlt(site.popup_logo, 'Logo'))} className="logo-image" />
                 </div>
               )}
               <div className="popup-text">{popupText}</div>
